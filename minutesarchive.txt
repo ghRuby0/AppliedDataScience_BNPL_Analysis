@@ -1,0 +1,52 @@
+#w5
+As this was our very first meeting we formed the group and set up a rough timeline and distribution of workload amongst members.
+Beyond just introductions and forming a team chat we also read through the provided brief. A weighted discussion was made between the 5 members about the potential 'pros' and 'cons' of each project.
+
+Ultimately we decided to go ahead with topic 2. As a group we felt as though the second topic was fairly linear in the sense that our project timeline could be easily divided amongst members; particularly data cleaning, EDA, modelling etc.
+The specific distribution of workload is TBD since the project specs have yet to be released.
+
+The only concerns at the moment are whether supplementary datasets are required similar to assignment 1, since obtaining financial transactions are difficult to obtain. 
+
+Overall we are still flexible to even changing to project 1 after further inspection on the project spec release next week. As is stands we have completed all preparation we reasonably can at this time and stand ready to handle the project once details are fully released.
+
+
+
+#w6
+
+Project 2 group 32
+Minutes (4/09 / 9:20)
+Group Members: Reuben, Chen Ji, Jizhu, Caitlin
+Agenda:
+● Topic 1: Discuss and read which topic we’re deciding on (last week it seemed to be
+BNPL)
+● Topic 2: Setting up the infrastructure to start the project- github repo
+General:
+● 2 requirements, how do we turn this data into profit, and how to do so without
+encroaching on privacy
+● Find a new ABS dataset relevant to the datasets
+● Start some research on how to detect fraud
+● Someone give a basic schema for what each of the datasets say for the project’s
+analysis, it crucially contains:
+○ Folder 1 has info on the merchants with consumer and merchant fraud- what
+they sell- please give us a table of info what is take rate
+○ Folder 2 is transactions by day in first half of 2021
+○ Folder 3 is transactions by day in second half of 2021 into 2022
+○ Folder 4 is transactions by day in rest of 2022 until 10th month
+● Someone writes script for the scraping
+● Either all time ranking, past six months only, or weighted by time ranking
+● Find growth rate across three years by percent of initial
+● User info to get expected fraudulent
+● Need to come up with a threshold for business rejection
+● Model predicts growth rate/possible fraudulency in the next 6 months or so
+Project Task Allocation:
+● Jizhu: Thinking up models
+● Reuben: Contact a friend about how this is usually done and how to get important
+info out of this
+● Caitlin: Find ABS data, figure out what else to do with locational data- Find ABS data
+and revenue/growth data, different things to rank business value + research
+● Chen Ji; Figure out how to detect fraudulency for sure
+Decisions and Next Steps:
+● Key decision 1: Deciding on Buy Now Pay Later project
+● Next step: How to designate a person/order as fraudulent based on location, gender,
+… other data, same with a business
+Signed: Reuben, Chen Ji, Jizhu, Caitlin 4/09
