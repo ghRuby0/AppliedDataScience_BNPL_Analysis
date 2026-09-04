@@ -1,4 +1,55 @@
 General Notes Page for anything we might forget
 ===============================================
 (Ruby) Have to come up with fraud threshold customer-side, merchant-side. Institute unsup ml here. SVM?
+(Ruby) Stitch together datasets by merchant and find the following variables:
+      > ID
+      > Name (redundant, perhaps lookup table?)
+      > Letter Tag (what is this?)
+      > Shop Tag (Clean the hell out of it)
+      > (All Time) Average Volume ($)
+      > (All Time) Take Rate (%)
+      > (All Time) Average Taken Revenue (Take Rate * Volume)
+      > (All Time) Average (Weighted) Fraud Percentage
+      > (All Time) Counter-Fraud Percentage (100 - Fraud Percent)
+      > (All Time) Expected Real Volume ($) (Counter-Fraud * Av Volume)
+      > (All Time) Expected Real Taken Revenue ($) (Counter-Fraud * Av Taken Rev)
+      > (Last-Six Months) Average Volume ($)
+      > (Last-Six Months) Take Rate (%)
+      > (Last-Six Months) Average Taken Revenue (Take Rate * Volume)
+      > (Last-Six Months) Average (Weighted) Fraud Percentage
+      > (Last-Six Months) Counter-Fraud Percentage (100 - Fraud Percent)
+      > (Last-Six Months) Expected Real Volume ($) (Counter-Fraud * Av Volume)
+      > (Last-Six Months) Expected Real Taken Revenue ($) (Counter-Fraud * Av Taken Rev)
+      In parallel, create a metric for removing all the customers who are fraudulent and recalculate base order data
+      by deleting fraudulent/probably fraudulent IDs.
+      > (All Time Limited) Average Volume ($)
+      > (All Time Limited) Take Rate (%)
+      > (All Time Limited) Average Taken Revenue (Take Rate * Volume)
+      > (All Time Limited) Average (Weighted) Fraud Percentage
+      > (All Time Limited) Counter-Fraud Percentage (100 - Fraud Percent)
+      > (All Time Limited) Expected Real Volume ($) (Counter-Fraud * Av Volume)
+      > (All Time Limited) Expected Real Taken Revenue ($) (Counter-Fraud * Av Taken Rev)
+      > (Last-Six Months Limited) Average Volume ($)
+      > (Last-Six Months Limited) Take Rate (%)
+      > (Last-Six Months Limited) Average Taken Revenue (Take Rate * Volume)
+      > (Last-Six Months Limited) Average (Weighted) Fraud Percentage
+      > (Last-Six Months Limited) Counter-Fraud Percentage (100 - Fraud Percent)
+      > (Last-Six Months Limited) Expected Real Volume ($) (Counter-Fraud * Av Volume)
+      > (Last-Six Months Limited) Expected Real Taken Revenue ($) (Counter-Fraud * Av Taken Rev)
+      Then, for each business, put in
+      > All Time Expected Taken-Revenue Growth Rate
+      > Last-Six Months Limited Expected Taken-Revenue Growth Rate
+      > All Time Limited Average Taken Revenue Growth Rate
+      > Last-Six Months Limited Expected Real Taken Revenue as percentage of market 
+      If possible, develop confidence intervals for 
+      > (All Time) Expected Real Taken Revenue
+      > (Last-Six Months) Expected Real Taken Revenue
+      > (All Time Limited) Average Taken Revenue
+      > (Last-Six Months) Average Taken Revenue
+      And then copy them out as min-max normalised:
+      > (All Time Normalised) Expected Real Taken Revenue
+      > (Last-Six Months Normalised) Expected Real Taken Revenue
+      > (All Time Limited Normalised) Average Taken Revenue
+      > (Last-Six Months Limited Normalised) Average Taken Revenue
+      
 (Caitlin) "proximity to other possibly fraudulent accounts might indicate coordinated attacks from fake accounts"
