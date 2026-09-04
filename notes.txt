@@ -1,0 +1,4 @@
+General Notes Page for anything we might forget
+===============================================
+(Ruby) Have to come up with fraud threshold customer-side, merchant-side. Institute unsup ml here. SVM?
+(Caitlin) "proximity to other possibly fraudulent accounts might indicate coordinated attacks from fake accounts"
